@@ -1,0 +1,10 @@
+{
+  "name": "my-restaurant-queue",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source restaurant queue, ordering, KDS and signage starter",
+  "type": "module",
+  "scripts": { "start": "node src/server.js", "dev": "node --watch src/server.js", "test": "node --test" },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

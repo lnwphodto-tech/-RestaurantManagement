@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: my-restaurant-queue
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ADMIN_TOKEN
+        generateValue: true
+      - key: RESTAURANT_NAME
+        value: My Restaurant
